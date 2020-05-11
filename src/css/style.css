@@ -94,7 +94,7 @@ body {
 .a-all-l{
 	position: relative;
 	width: 30vw;
-	height: all;
+	height: auto;
 	padding-top: 64%;
 	margin-left: 5%;
 }
@@ -106,9 +106,10 @@ body {
 }
 
 .a-cont-l{
-	position: relative;
+	position: absolute;
 	width: 60vw;
 	left: 10vw;
+	bottom: 50vw;
 	background: #31a05f;
 	z-index: 9999;
 }
@@ -138,8 +139,8 @@ body {
 .a-all-r{
 	position: relative;
 	width: 30vw;
-	height: all;
-	margin-top: -60%;
+	height: auto;
+	padding-top: 20%;
 	margin-left: 50%;
 }
 
@@ -151,10 +152,10 @@ body {
 }
 
 .a-cont-r{
-	position: relative;
+	position: absolute;
 	width: 60vw;
-	margin-top: 12vw;
 	left: 4vw;
+	bottom: -2vw;
 	background: #31a05f;
 	z-index: 9999;
 }
