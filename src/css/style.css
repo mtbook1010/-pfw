@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+}
+
+body{
+	background-image: url(../img/bg-img.png);
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+.logo{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 300px;
+	z-index: 9999;
+}
+
+.main .cc{
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	font-size: 8rem;
+	z-index: 9997;
+	font-weight: 900;
+	color: #fff;
+	letter-spacing: 0.5rem;
+}
+
+.side{
+	width: 600px;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #fff;
+	z-index: 9990;
+}
+
+.menu-m{
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: #31a05f;
+	z-index: 9999;
+}
+
+.menu-m p{
+	display: inline-block;
+	margin: 2rem 3rem 0 0;
+	font-weight: 900;
+	letter-spacing: 0.1rem;
+}
