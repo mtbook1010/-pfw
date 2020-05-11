@@ -4,23 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;900&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;900&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./src/js/jquery.marker-animation/index.js"></script>
+  <script src="./src/js/rellax.min.js"></script>
   <title>Prock</title>
 </head>
 <body>
-<img src="./src/img/logo.svg" class="logo">
-   
+<div id="wrap" class="rellax" data-rellax-speed="-18"></div>
+  <img src="./src/img/logo.svg" class="logo">
   <div class="main">
-    <p class="cc">建設を変える。<br>時代を変える。</p>
+    <div class="cc"><span class="marker-animation">建設を変える</span><br><span class="marker-animation" data-ma_delay=".3s">社会を変える</span></div>
+
+    <div class="a-all-l">
+      <p class="title-tag-l rellax marker-animation" data-rellax-speed="-5.5" data-ma_delay=".5s">.01</p>
+      <img src="./src/img/a01.png" class="a01 rellax" data-rellax-speed="-5">
+      <div class="a-cont-l rellax" data-rellax-speed="-4.8">
+        <span class="a-cont-title-l">.Modern Monument 01</span>
+        <span class="a-cont-more-l">堂々としたスクリーンのような間口の背後には、温かく歓迎される室内空間があり、徐々に庭に向かって家を開放し、透明な背面のファサードで外を室内に取り入れることができるようになっている。私達のコントラストの構成は、古典的なミュンヘンの町家の新しい試みとなるような個性的な家を求めるクライアントの要望に応えています。</span>
+      </div>
+
+      <div class="a-all-r">
+        <p class="title-tag-r rellax marker-animation" data-rellax-speed="-5.5" data-ma_delay=".5s">.02</p>
+        <img src="./src/img/a02.png" class="a02 rellax" data-rellax-speed="-5">
+        <div class="a-cont-r rellax" data-rellax-speed="-4.8">
+          <span class="a-cont-title-r">.Timeless Transparency 02</span>
+          <span class="a-cont-more-r">私たちは特徴的なY字型のプランと継ぎ目のないガラスの表皮を持つコンセプトを作り上げました。3つの翼の異なるプログラムは、太陽の動きに関連しています。建築物の高さの制限により、建築物の容積の半分を地下に置く必要があったので、日中の光を最大限に利用することは、より重要なことであった。</span>
+        </div>
+    </div>
+
   </div>
 
   <div class="side">
-    <div class="menu-m">
-      <p>お知らせ</p>
-      <p>企業情報</p>
-      <p>採用情報</p>
-      <p>お問い合わせ</p>
+    <div class="rellax" data-rellax-speed="-12">
+      <p class="title">私たちは建築で社会問題のソリューションを提案します。</p>
+      <p class="cont">
+        株式会社Prockは18年間、社会事業を主に安心・安全を軸に置いた建設業を行ってきました。「社会をより良くするにはどうすればいいのか」という問題提起を常に行い、目的達成のために日々熟考しています。
+      </p>
     </div>
   </div>
+
+<script>
+    $('.marker-animation').markerAnimation({
+      color: '#31a05f',
+      thickness: '8vw',
+      duration: '1s'
+    });
+
+    var rellax = new Rellax('.rellax'); 
+
+</script>
 </body>
 </html>
