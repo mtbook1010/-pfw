@@ -2,6 +2,10 @@
 	margin: 0;
 }
 
+.pace-running .page-loading{
+	display: none;
+}
+
 #wrap{
 	position: absolute;
 	background-image: url(../img/bg-img.png);
