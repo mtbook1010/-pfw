@@ -9,7 +9,7 @@
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 200vh;
-	z-index: -1;
+	z-index: -2;
 }
 
 body {
@@ -62,7 +62,7 @@ body {
 	top: 0;
 	right: 0;
 	background: #fff;
-	z-index: 9990;
+	z-index: -1;
 	font-family: 'Noto Sans JP' !important;
 }
 
@@ -148,14 +148,14 @@ body {
 	display: block;
 	z-index: 9998;
 	width: 30vw;
-	margin-left: 150%;
+	margin-left: 146%;
 }
 
 .a-cont-r{
 	position: absolute;
 	width: 60vw;
 	left: 4vw;
-	bottom: -2vw;
+	bottom: -10vw;
 	background: #31a05f;
 	z-index: 9999;
 }
