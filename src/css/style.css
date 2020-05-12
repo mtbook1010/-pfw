@@ -184,6 +184,8 @@ body {
 	line-height: 2;
 }
 
+/*--------------------pace.js--------------------*/
+
 .pace {
 	-webkit-pointer-events: none;
 	pointer-events: none;

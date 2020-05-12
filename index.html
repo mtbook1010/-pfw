@@ -56,6 +56,11 @@
     var rellax = new Rellax('.rellax'); 
 
     luxy.init();
+
+    Pace.on('done', function(){
+            $('.page-loading').fadeIn();
+        });
+
 </script>
 </body>
 </html>
