@@ -11,16 +11,20 @@
   <script src="./src/js/rellax.min.js"></script>
   <script src="./src/js/luxy.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
   <title>Prock</title>
 
 </head>
 <body>
 <div class="page-loading">
+
 <div id="wrap" class="rellax" data-rellax-speed="-10"></div>
   <img src="./src/img/logo.svg" class="logo">
   <div class="main">
+    <div class="cc-m">
     <div class="cc"><span class="marker-animation">建設を変える</span><br><span class="marker-animation">社会を変える</span></div>
+    </div>
 
     <div class="a-all-l">
       <img src="./src/img/a01.png" class="a01">
@@ -45,6 +49,21 @@
         株式会社Prockは18年間、社会事業を主に安心・安全を軸に置いた建設業を行ってきました。「社会をより良くするにはどうすればいいのか」という問題提起を常に行い、目的達成のために日々熟考しています。
       </p>
   </div>
+
+  <div id="footer">
+  <div>
+    <i class="fab fa-twitter-square"></i>
+    <i class="fab fa-facebook-square"></i>
+  </div>
+  <div>
+    <p class="footer-cont">News</p>
+    <p class="footer-cont">About us</p>
+    <p class="footer-cont">IR</p>
+    <p class="footer-cont">Recruit</p>
+    <p class="footer-copyright">© Prock Co., Ltd.</p>
+  </div>
+</div>
+
 </div>
 <script>
     $('.marker-animation').markerAnimation({
@@ -60,6 +79,11 @@
     Pace.on('done', function(){
             $('.page-loading').fadeIn();
         });
+
+    $('#toggle').click(function() {
+      $(this).toggleClass('active');
+      $('#overlay').toggleClass('open');
+    });
 
 </script>
 </body>
