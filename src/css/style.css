@@ -85,7 +85,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 .title{
 	display: block;
 	color: #272727;
-	margin: 30vh 3rem 0 0;
+	margin: 45% 3rem 0 0;
 	float: right;
 	text-align: right;
 	font-size: 2rem;
@@ -105,6 +105,54 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 	width: 80%;
 	letter-spacing: 0.3rem;
 	line-height: 2;
+}
+
+.more-button{
+	position: absolute;
+	background: #31a05f;
+	width: 3rem;
+	height: 3rem;
+	z-index: 9899;
+	transition-duration: 0.3s;
+}
+
+.more-button span{
+	position: absolute;
+	color: #fff;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: .3s;
+}
+
+.more-button:hover span:nth-child(1){
+	display: none;
+	transition: .3s;
+}
+
+.more-button:hover span:nth-child(2){
+	display: block;
+	transition: .3s;
+}
+
+.more-button span:nth-child(2){
+	display: none;
+	transition: .3s;
+}
+
+
+.more-button:hover{
+	width: 6rem;
+	transform: scale(1.5);
+	transition-duration: 0.3s;
+}
+
+
+/*-----------------------------------------*/
+
+.more-button-l{
+	position: absolute;
+	right: 0;
 }
 
 .a-all-l{
@@ -151,6 +199,11 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 }
 
 /*-----------------------------------------*/
+
+.more-button-r{
+	position: absolute;
+	left: 146%;
+}
 
 .a-all-r{
 	position: relative;
@@ -207,10 +260,16 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 	text-align: center;
 }
 
-#footer .fab{
+.fab{
 	font-size: 2.5rem;
 	margin: 3rem 1rem 1rem 1rem;
 	color: #fff;
+	transition: .3s;
+}
+
+.fab:hover{
+	color: #31a05f;
+	transition: .3s;
 }
 
 .footer-cont{
@@ -223,14 +282,13 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 }
 
 .footer-copyright{
-	position: absolute;
+	display: block;
+	background: #272727;
+	padding: 3vw 0 0 0;
+	position: relative;
 	color: #31a05f;
 	font-size: 0.5rem;
-	bottom: 1rem;
-	left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
+	margin: auto;
 }
 
 /*--------------------pace.js--------------------*/
