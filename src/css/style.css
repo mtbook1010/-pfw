@@ -177,7 +177,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 	left: 10vw;
 	bottom: 50vw;
 	background: #31a05f;
-	z-index: 9999;
+	z-index: 9995;
 }
 
 .a-cont-title-l{
@@ -228,7 +228,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 	left: 4vw;
 	bottom: -10vw;
 	background: #31a05f;
-	z-index: 9999;
+	z-index: 9995;
 }
 
 .a-cont-title-r{
@@ -401,7 +401,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 		position: absolute;
 		top: 100vh;
 		background: #fff;
-		z-index: 9999;
+		z-index: 9995;
 		font-family: 'Noto Sans JP' !important;
 	}
 	
@@ -481,7 +481,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 	.more-button-l{
 		position: absolute;
 		right: 20vw;
-		z-index: 9999;
+		z-index: 9995;
 	}
 	
 	.a-all-l{
@@ -505,7 +505,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 		margin: auto;
 		padding: 1.2rem;
 		background: #31a05f;
-		z-index: 9999;
+		z-index: 9995;
 	}
 	
 	.a-cont-title-l{
@@ -533,6 +533,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 	.more-button-r{
 		position: absolute;
 		left: 20vw;
+		z-index: 9995;
 	}
 	
 	.a-all-r{
@@ -558,7 +559,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 		margin: auto;
 		padding: 1.2rem;
 		background: #31a05f;
-		z-index: 9999;
+		z-index: 9995;
 	}
 	
 	.a-cont-title-r{
@@ -763,4 +764,24 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 	-webkit-transform: translateX(0%);
 	transform: translateX(0%);/*中身を表示（右へスライド）*/
 	transition: .5s;
+  }
+
+  .menu-m{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
+  .menu-cont{
+	  font-size: 2rem;
+	  line-height: 3;
+	  letter-spacing: 0.1rem;
+	  color: #272727;
+	  transition: .5s;
+  }
+
+  .menu-cont:hover{
+	  color: #31a05f;
+	  transition: .5s;
   }
